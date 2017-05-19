@@ -1,0 +1,36 @@
+{
+  "name": "Recast-ai-starter-kit",
+  "version": "1.0.0",
+  "description": "A bot built with Recast.AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon lib/server.js",
+    "prod": "node lib/server.js",
+    "lint": "eslint lib/",
+    "build": "echo BUILD"
+  },
+  "author": "Recast",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RecastAI/starter-NodeJS.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "recastai": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.0",
+    "eslint-config-zavatta": "^4.2.0",
+    "eslint-plugin-import": "^1.6.1",
+    "nodemon": "^1.11.0"
+  },
+  "eslintConfig": {
+    "extends": "zavatta",
+    "rules": {
+      "no-console": 0,
+      "callback-return": 0
+    }
+  }
+}
