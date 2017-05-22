@@ -13,7 +13,7 @@ def get_bot_reply(text):
   :returns: TODO
 
   """
-  res = requests.post('https://run.recast.ai/ftriquet-track-order', headers={'Content-Type': 'application/json'}, json={'text': text})
+  res = requests.post('https://run.recast.ai/mandre-track-order', headers={'Content-Type': 'application/json'}, json={'text': text})
   if res.status_code != 200:
     raise RuntimeError('Request failed')
   res.close()
